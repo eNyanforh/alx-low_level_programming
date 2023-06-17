@@ -4,7 +4,7 @@
 /**
  * main - Checking wheather a number is positive, nagive or zero
  *
- * Return: 0 (Success)
+ * Return: 0(Success)
  */
 int main(void)
 {
