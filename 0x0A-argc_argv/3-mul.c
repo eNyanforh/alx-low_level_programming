@@ -8,11 +8,11 @@
  */
 int _atoi(char *string)
 {
-	int j, e, o, len, g, digit;
+	int j, e, m, len, g, digit;
 
 	j = 0;
 	e = 0;
-	o = 0;
+	m = 0;
 	len = 0;
 	g = 0;
 	digit = 0;
@@ -30,7 +30,7 @@ int _atoi(char *string)
 			digit = string[j] - '0';
 			if (e % 2)
 				digit = -digit;
-			o = o * 10 + digit;
+			m = m * 10 + digit;
 			g = 1;
 			if (string[j + 1] < '0' || string[j + 1] > '9')
 				break;
@@ -42,7 +42,7 @@ int _atoi(char *string)
 	if (g == 0)
 		return (0);
 
-	return (o);
+	return (m);
 }
 
 /**
