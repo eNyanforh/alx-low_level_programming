@@ -34,7 +34,7 @@ int _atoi(char *string)
 			g = 1;
 			if (string[j + 1] < '0' || string[j + 1] > '9')
 				break;
-			e = 0;
+			g = 0;
 		}
 		j++;
 	}
