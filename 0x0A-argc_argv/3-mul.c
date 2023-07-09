@@ -30,7 +30,7 @@ int _atoi(char *string)
 			digit = string[j] - '0';
 			if (e % 2)
 				digit = -digit;
-			o = e * 10 + digit;
+			o = o * 10 + digit;
 			g = 1;
 			if (string[j + 1] < '0' || string[j + 1] > '9')
 				break;
